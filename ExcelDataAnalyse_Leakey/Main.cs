@@ -13,68 +13,6 @@ using NPOI.XSSF.UserModel;
 
 namespace ExcelDataAnalyse_Leakey
 {
-
-    public class ExamModel  :  ICloneable
-    {
-        //需要排序和克隆↑
-        //定义模型(预留了其他内容没有做)
-        //账号
-        public string account { get; set; }
-        //昵称
-        public string nickName { get; set; }
-        //组织名
-        public string organizationName { get; set; }
-        //手机号
-        public string phoneNumber { get; set; }
-        //姓名
-        public string fullName { get; set; }
-        //单位
-        public string unitName { get; set; }
-        //职务
-        public string dutyName { get; set; }
-        //分数
-        public string score { get; set; }
-        //分数（int），为了排序方便
-        public int scoreInt { get; set; }
-        //用时
-        public string usingTime { get; set; }
-
-        //初始化
-        public ExamModel()
-        {
-            account = "";
-            nickName = "";
-            organizationName = "";
-            phoneNumber = "";
-            fullName = "";
-            unitName = "";
-            dutyName = "";
-            score = "";
-            scoreInt = -1;
-            usingTime = "";
-        }
-
-        //克隆方法
-        public object Clone()
-        {
-            ExamModel _em = new ExamModel();
-            _em.account = account;
-            _em.nickName = nickName;
-            _em.organizationName = organizationName;
-            _em.phoneNumber = phoneNumber;
-            _em.fullName = fullName;
-            _em.unitName = unitName;
-            _em.dutyName = dutyName;
-            _em.score = score;
-            _em.scoreInt = scoreInt;
-            _em.usingTime = usingTime;
-
-            return _em as object;//深复制
-        }
-
-
-    }
-
     public partial class Main : Skin_Mac
     {
         //所有表格中的所有人
@@ -535,5 +473,66 @@ namespace ExcelDataAnalyse_Leakey
             string time = originalMinute + "分" + originalSecond+"秒";
             return time;
         }
+    }
+
+    public class ExamModel : ICloneable
+    {
+        //需要排序和克隆↑
+        //定义模型(预留了其他内容没有做)
+        //账号
+        public string account { get; set; }
+        //昵称
+        public string nickName { get; set; }
+        //组织名
+        public string organizationName { get; set; }
+        //手机号
+        public string phoneNumber { get; set; }
+        //姓名
+        public string fullName { get; set; }
+        //单位
+        public string unitName { get; set; }
+        //职务
+        public string dutyName { get; set; }
+        //分数
+        public string score { get; set; }
+        //分数（int），为了排序方便
+        public int scoreInt { get; set; }
+        //用时
+        public string usingTime { get; set; }
+
+        //初始化
+        public ExamModel()
+        {
+            account = "";
+            nickName = "";
+            organizationName = "";
+            phoneNumber = "";
+            fullName = "";
+            unitName = "";
+            dutyName = "";
+            score = "";
+            scoreInt = -1;
+            usingTime = "";
+        }
+
+        //克隆方法
+        public object Clone()
+        {
+            ExamModel _em = new ExamModel();
+            _em.account = account;
+            _em.nickName = nickName;
+            _em.organizationName = organizationName;
+            _em.phoneNumber = phoneNumber;
+            _em.fullName = fullName;
+            _em.unitName = unitName;
+            _em.dutyName = dutyName;
+            _em.score = score;
+            _em.scoreInt = scoreInt;
+            _em.usingTime = usingTime;
+
+            return _em as object;//深复制
+        }
+
+
     }
 }
