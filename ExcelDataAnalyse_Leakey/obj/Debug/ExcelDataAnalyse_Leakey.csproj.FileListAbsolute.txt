@@ -15,4 +15,4 @@
 \\Mac\Home\Documents\GitHub\ExcelDataAnalyse_Leakey\ExcelDataAnalyse_Leakey\obj\Debug\ExcelDataAnalyse_Leakey.csproj.CopyComplete
 \\Mac\Home\Documents\GitHub\ExcelDataAnalyse_Leakey\ExcelDataAnalyse_Leakey\obj\Debug\ExcelDataAnalyse_Leakey.exe
 \\Mac\Home\Documents\GitHub\ExcelDataAnalyse_Leakey\ExcelDataAnalyse_Leakey\obj\Debug\ExcelDataAnalyse_Leakey.pdb
-\\Mac\Home\Documents\GitHub\ExcelDataAnalyse_Leakey\ExcelDataAnalyse_Leakey\obj\Debug\ExcelDataAnalyse_Leakey.ExamModel.resources
+\\Mac\Home\Documents\GitHub\ExcelDataAnalyse_Leakey\ExcelDataAnalyse_Leakey\obj\Debug\ExcelDataAnalyse_Leakey.Main.resources

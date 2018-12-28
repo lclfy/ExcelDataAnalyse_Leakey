@@ -71,6 +71,8 @@ namespace ExcelDataAnalyse_Leakey
         private void Start_btn_Click(object sender, EventArgs e)
         {
             //运行getData()方法，该方法返回一个string值，若运行正常，则自定义返回"success"
+            allTesters = new List<ExamModel>();
+            selectedTesters = new List<ExamModel>();
             if (getData().Equals("success"))
             {
                 analyseData();
@@ -200,7 +202,7 @@ namespace ExcelDataAnalyse_Leakey
                     {
                         if (timeCell.ToString().Trim().Length != 0)
                         {
-                            _em.usingTime = timeCell.ToString().Trim();
+                            _em.usingTime = timeCell.ToString().Trim().Replace(" ","");
                         }
                     }
                     //每一行的分数
